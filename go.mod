@@ -8,4 +8,4 @@ require (
 	github.com/nxadm/tail v1.4.8
 )
 
-replace github.com/nxadm/tail => github.com/arturcarvalho/tail v1.4.9
+replace github.com/nxadm/tail => github.com/arturcarvalho/tail v1.4.8
