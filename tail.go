@@ -241,7 +241,9 @@ func (tail *Tail) readLine() (string, error) {
 	tail.lk.Unlock()
 
 	newlineEnding := strings.HasSuffix(line, "\n")
-	line = strings.TrimRight(line, "\n")
+	
+	// Only line changed from origin branch
+	// line = strings.TrimRight(line, "\n")
 
 	// if we don't have to handle incomplete lines, we can return the line as-is
 	if !tail.Config.CompleteLines {
